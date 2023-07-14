@@ -26,11 +26,20 @@ export default function NavBar({ user, setUser }) {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/gallery">Gallery</Link></li>
           <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/signup">Sign-Up</Link></li>
         </ul>
       </div>
-      <span>Welcome, {user.name}</span>
-      <Link to="" onClick={handleLogOut}>Log Out</Link>
+      {user ? (
+  <>
+    <span>Welcome, {user.name}</span>
+    <Link to="" onClick={handleLogOut}>Log Out</Link>
+  </>
+) : (
+  <Link to="/signup">Sign-Up</Link>
+)}
+
     </nav>
   );
 }
+
 
