@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
+const cors = require('cors');
 // Always require and configure near the top
 require('dotenv').config();
 // Connect to the database
@@ -16,7 +17,9 @@ app.use(express.json());
 // to serve from the production 'build' folder
 //app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'build')));
-
+app.use(cors({
+  origin: ['http://localhost:3000','https://technical-c55d.onrender.com' ]
+}))
 const port = process.env.PORT || 3001;
 
 // Put API routes here, before the "catch all" route
