@@ -3,6 +3,7 @@ import './HomePage.css';
 import technicalImage from './technical1.jpeg';
 import technicalImage2 from './technical2.jpeg';
 import technicalImage3 from './technical3.jpg';
+import technicalImage4 from './border.jpeg';
 
 function HomePage() {
   return (
@@ -19,6 +20,7 @@ function HomePage() {
       <p>More than just a retail store, Technical is a gathering place for like-minded skaters. We foster a vibrant community by hosting events, workshops, and skate sessions, providing opportunities for riders of all levels to connect, learn, and push their boundaries together. Our passion for skateboarding extends beyond selling products; we are devoted to supporting the growth and development of the local skate scene.</p>
       <img className="home-logo" src={technicalImage3} alt="Technical Logo 3" />
       <p>With a welcoming and inclusive atmosphere, Technical embraces skaters of all ages and backgrounds. Whether you're a street, park, or transition skater, our friendly staff is dedicated to delivering exceptional customer service and personalized advice. We strive to create an environment where you feel inspired and supported on your skateboarding journey.</p>
+      <img className="home-logo" src={technicalImage4} alt="Technical Logo 4" />
       <p>Conveniently located in Norwell, our store serves as a haven for skateboarders seeking premium technical gear and a sense of community. Drop by Technical, immerse yourself in the world of technical skateboarding, and discover the latest innovations that can elevate your riding experience to new heights.</p>
       <p>Join us at Technical, where we celebrate the art, athleticism, and camaraderie of technical skateboarding. Embrace the challenge, embrace the gear, and embrace the community. Together, let's push the limits of what's possible on four wheels.</p>
       <iframe
