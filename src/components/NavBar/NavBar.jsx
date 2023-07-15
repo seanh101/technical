@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import * as userService from '../../utilities/users-service';
+//import * as userService from '../../utilities/users-service';
 import './NavBar.css';
 
 export default function NavBar({ user, setUser }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  function handleLogOut() {
-    userService.logOut();
-    setUser(null);
-  }
+  // function handleLogOut() {
+  //   userService.logOut();
+  //   setUser(null);
+  // }
 
   return (
     <nav>
@@ -26,17 +26,17 @@ export default function NavBar({ user, setUser }) {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/gallery">Gallery</Link></li>
           <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/signup">Sign-Up</Link></li>
+          {/* <li><Link to="/signup">Sign-Up</Link></li> */}
         </ul>
       </div>
-      {user ? (
+      {/* {user ? (
   <>
     <span>Welcome, {user.name}</span>
     <Link to="" onClick={handleLogOut}>Log Out</Link>
   </>
 ) : (
   <Link to="/signup">Sign-Up</Link>
-)}
+)} */}
 
     </nav>
   );
