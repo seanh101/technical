@@ -1,81 +1,81 @@
 .home-page {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.home-page h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-page h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-media-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.social-media-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: none;
+}
+
+.image-gallery {
+  margin-top: 20px;
+}
+
+.image-gallery .rotating-image {
+  border: white solid;
+}
+
+.other-images {
+  margin-top: 40px;
+}
+
+.other-images p {
+  margin-bottom: 60px;
+  text-align: justify;
+}
+
+@media (max-width: 480px) {
+  .home-page {
+    padding: 10px;
   }
-  
+
   .home-page h1 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 24px;
   }
-  
+
   .home-page h4 {
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 18px;
   }
-  
-  .social-media-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+
+  .home-page p {
+    font-size: 14px;
   }
-  
-  .social-media-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .social-media-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border: none;
-  }
-  
-  .other-images {
-    margin-top: 40px; /* Adjust this value for the desired spacing */
-  }
-  
-  .other-images .home-logo {
-    margin-bottom: 40px;
-    border: white solid;
-  }
-  
-  .other-images p {
-    margin-bottom: 60px;
-    text-align: justify;
-  }
-  
-  @media (max-width: 480px) {
-    .home-page {
-      padding: 10px;
-    }
-  
-    .home-page h1 {
-      font-size: 24px;
-    }
-  
-    .home-page h4 {
-      font-size: 18px;
-    }
-  
-    .home-page p {
-      font-size: 14px;
-    }
-  
-    .home-logo {
-      margin-bottom: 20px;
-    }
-  }
-  
+}
+
+
   
   
   
